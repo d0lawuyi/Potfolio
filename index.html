@@ -25,7 +25,22 @@ a{color:#E8B44A}a:hover{color:#F6D58E}
 .on-roll{animation:roll 26s linear infinite}
 @media (prefers-reduced-motion:reduce){.on-bars,.on-teaser,.on-r1,.on-r2,.on-r3,.on-roll{animation:none}.on-teaser{opacity:0}}
 </style>
-<style>html{scroll-behavior:smooth}</style>
+<style>html{scroll-behavior:smooth}
+/* Phones: inline styles above are sized for desktop, so these override them */
+@media (max-width:600px){
+  header{padding:16px 20px!important;gap:10px!important}
+  header>a{font-size:18px!important;letter-spacing:3px!important}
+  header nav{gap:10px 18px!important;font-size:12px!important;letter-spacing:1.5px!important}
+  #top{height:auto!important;min-height:560px;margin-top:0!important;padding:56px 20px 64px!important}
+  #top>div{width:100%;min-width:0}
+  #top h1{font-size:clamp(44px,15vw,64px)!important;letter-spacing:4px!important}
+  #top p{font-size:18px!important;letter-spacing:3px!important}
+  #top .on-r1:first-child{letter-spacing:0!important}
+  #top .on-r3{margin-top:28px!important;gap:12px!important}
+  #top .on-r3 a{padding:14px 22px!important;font-size:15px!important}
+  #starring,#now-showing,#credits{padding-top:56px!important;padding-bottom:56px!important}
+  #starring h2,#now-showing h2,#credits h2{font-size:40px!important}
+}</style>
 </head>
 <body>
 <div style="font-family: Inter, system-ui, sans-serif; color: #EDE6D6; background: #070605; min-height: 100vh">
